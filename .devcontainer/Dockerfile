@@ -86,8 +86,8 @@ RUN wget https://update-cardano-mainnet.iohk.io/cardano-node-releases/cardano-no
 RUN echo "export CARDANO_NODE_SOCKET_PATH=/ipc/node.socket" >> ~/.bashrc
 
 # install kuber
-RUN wget https://github.com/luisantonioig/kuber/releases/download/PPP4/kuber.tar.gz \
-  && tar -xf kuber.tar.gz -C /usr/bin \
+RUN wget https://github.com/luisantonioig/kuber/releases/download/PPP4/kuber-2.2.0-linux-x86_64.tar.gz \
+  && tar -xf kuber-2.2.0-linux-x86_64.tar.gz -C /usr/bin \
   && echo "export NETWORK=preview" >> ~/.bashrc
 
 RUN echo "export PATH=$PATH:/root/.cabal/bin" >> ~/.bashrc
